@@ -1,0 +1,14 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: aliceblue;
+}
+
+.pagination button {
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    color: white;
+}

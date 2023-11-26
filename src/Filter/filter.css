@@ -1,0 +1,24 @@
+.filters-container {
+    margin: 40px 20px;
+    display: flex;
+    gap: 12px;
+    height: 30px;
+}
+
+.filters-container input {
+    width: -webkit-fill-available;
+}
+
+.filters-container select {
+    width: 200px;
+}
+
+@media only screen and (max-width: 782px) {
+    .filters-container {
+        flex-direction: column;
+    }
+    
+    .filters-container select {
+        width: 100%;
+    }
+}

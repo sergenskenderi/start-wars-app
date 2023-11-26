@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuth } from './AuthContext';
 import Login from './Login';
+import CharactersController from '../Characters/CharactersController';
 
 const AuthController = () => {
   const { isAuthenticated } = useAuth();
@@ -8,7 +9,7 @@ const AuthController = () => {
   return (
     <div>
       {isAuthenticated ? (
-        <p>Welcome! Your authenticated content here.</p>
+        <CharactersController />
       ) : (
         <Login />
       )}

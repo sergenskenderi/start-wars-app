@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { AuthProvider } from './Authentication/AuthContext';
 import AuthController from './Authentication/AuthController';
+import "./config";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

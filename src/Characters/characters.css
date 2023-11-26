@@ -1,0 +1,39 @@
+.characters-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 20px;
+    text-align: center;
+    gap: 8px;
+}
+
+.characters-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid gray;
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.characters-card img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.error-container {
+    text-align: center;
+    margin: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.loading-container {
+    width: fit-content;
+    margin: 150px auto;
+}

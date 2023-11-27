@@ -5,12 +5,12 @@ import CharactersCard from "./CharacterCard";
 import "./characters.css";
 
 const CharactersPage = (props) => {
-    const { characters, error, currentPage, handlePageChange, loading, totalPages } = props;
-    
+    const { characters, error, currentPage, handlePageChange, loading, totalPages, handleSearchByName, searchName } = props;
+
     return (
         error ? <div className="error-container">Something went wrong. Please refresh the page or contact with support.</div> :
           <div className="characters-container">
-            <Filter />
+            <Filter handleSearchByName={handleSearchByName} searchName={searchName} />
             {loading ? <div className="loading-container"><Loading /></div> : characters && characters.length ? <>
             <div className="characters-grid-container">
                 {characters.map((character,index) => <CharactersCard key={index} name={character.name} />)}

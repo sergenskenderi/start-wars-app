@@ -1,10 +1,17 @@
+import { useState } from "react";
 import "./filter.css"
 
-const Filter = (pros) => {
+const Filter = (props) => {
+    const { searchName, handleSearchByName } = props;
+
+    const handleSearch = (event) => {
+        const value = event.target.value;
+        handleSearchByName(value);
+    }
 
     return (
         <div className="filters-container">
-            <input placeholder="Input the name of the character" />
+            <input type="text" value={searchName} onChange={handleSearch} placeholder="Input the name of the character" />
             <select>
                 <option>Homeworld</option>
             </select>

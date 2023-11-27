@@ -20,7 +20,7 @@ const CharactersPage = (props) => {
             characterDetails,
             detailsLoading
          } = props;
-    console.log(characterDetails);
+
     const formatDate = (inputDate) => {
         const date = new Date(inputDate);
         

@@ -20,6 +20,23 @@
     width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+
+  .modal-content-loading {
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+  }
   
 
   .close {

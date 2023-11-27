@@ -51,3 +51,30 @@
     width: fit-content;
     margin: 150px auto;
 }
+
+.personal-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.personal-data-container p{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.personal-data-container span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.personal-data-title {
+    font-size: 18px;
+    margin: 20px 0 5px 0;
+}
+
+.homeworld-data-container {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+}

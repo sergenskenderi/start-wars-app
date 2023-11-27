@@ -21,6 +21,7 @@ const Filter = (props) => {
             <select>
                 <option>Specie</option>
             </select>
+            <button>Logout</button>
         </div>
     )
 } 

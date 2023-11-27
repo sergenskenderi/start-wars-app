@@ -32,6 +32,13 @@
     border-radius: 5px;
     font-size: 14px;
     font-weight: 500;
+    transition: transform 0.3s ease-in-out;
+}
+
+.characters-card:hover {
+    background-color: #5e759e;
+    transform: scale(1.05);
+    color: white;
 }
 
 .characters-card img {
